@@ -1,0 +1,59 @@
+@import "fonts.scss";
+@import "common.scss";
+@import "header.scss";
+
+.footer__page {
+   background-image: url('../img/footer.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 40px 0;
+}
+.authorship__title {
+   @include adaptiveFont(14, 8);
+   font-family: "Futura PT";
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   line-height: 1.994;
+   text-align: left;
+}
+.footer__content-links {
+   display: flex;
+   gap: 55px;
+}
+.footer__content-link {
+   @include adaptiveFont(12, 6);
+   font-family: "Futura PT";
+   color: rgba(255, 255, 255, 0.4);
+   text-decoration: underline;
+   text-transform: uppercase;
+   line-height: 2.327;
+   text-align: left;
+   &:hover {
+      color: rgba(255, 255, 255);
+   }
+}
+.footer__button {
+   @include adaptiveFont(16, 10);
+   font-family: "Futura PT";
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   line-height: 1.2;
+   text-align: left;
+}
+@media screen and (max-width: 500px) {
+   .footer__body {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+   }
+   .footer__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+   }
+   .footer__content-links {
+      gap: 20px;
+   }
+}

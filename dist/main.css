@@ -1,0 +1,302 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #5C6A79;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "futuraBook";
+  src: url(fonts/futurabookc-webfont.woff2) format("woff2"), url(fonts/futurabookc-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url(fonts/futurademic-webfont.woff2) format("woff2"), url(fonts/futurademic-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.header__page {
+  padding: 28px 0;
+  width: 100%;
+  position: absolute;
+  pointer-events: auto;
+}
+
+.header__container {
+  justify-content: space-between;
+}
+
+.social-media__list {
+  display: flex;
+  gap: 13px;
+}
+
+.social-media__list-image {
+  width: 44px;
+  height: 44px;
+}
+
+.button__btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  background-color: rgba(41, 211, 209, 0);
+  padding: 8px 26px;
+  font-size: 15px;
+  font-family: "FuturaDemiC";
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "futuraBook";
+  src: url(fonts/futurabookc-webfont.woff2) format("woff2"), url(fonts/futurabookc-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url(fonts/futurademic-webfont.woff2) format("woff2"), url(fonts/futurademic-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.wrapper {
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-screen__page {
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  height: 810px;
+}
+
+.main-screen__container {
+  position: relative;
+  padding-top: 230px;
+}
+
+.main-screen__body {
+  padding-left: 145px;
+  overflow: hidden;
+}
+
+.main-screen__content {
+  padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-screen__content-stock {
+  margin: 0 0 10px auto;
+}
+
+.main-screen__content-subtitle {
+  position: relative;
+  margin: 25px 0 15px 0;
+  font-size: 27px;
+  font-family: "futuraBook";
+  color: rgb(255, 255, 255);
+  line-height: 1.119;
+  -moz-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+  -webkit-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+  -ms-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+}
+.main-screen__content-subtitle::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  opacity: 0.302;
+  position: absolute;
+  left: -270px;
+  top: 50%;
+  width: 255px;
+  height: 2px;
+  z-index: 14;
+}
+.main-screen__content-subtitle::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  opacity: 0.302;
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  width: 255px;
+  height: 2px;
+  z-index: 14;
+}
+
+.main-screen__content-button {
+  display: flex;
+  gap: 19px;
+}
+
+.main-screen__content-btn {
+  width: 190px;
+  height: 56px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.102);
+  border-radius: 6px;
+  background-color: rgba(247, 247, 247, 0);
+}
+
+.main-screen__content-btn-img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-screen__button {
+  border-radius: 10px;
+  background-color: rgb(41, 211, 209);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 15px 35px;
+  position: absolute;
+  bottom: -30px;
+}
+
+.main-screen-span {
+  font-size: 22.448px;
+  font-family: "futuraBook";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.336;
+  -moz-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+  -webkit-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+  -ms-transform: matrix(0.614179158, 0, 0, 0.6236675821, 0, 0);
+}
+
+.main-screen-arrow {
+  width: 38px;
+  height: 18px;
+}
+
+/*# sourceMappingURL=main.css.map*/

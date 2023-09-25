@@ -1,0 +1,66 @@
+@import "fonts.scss";
+@import "common.scss";
+
+.advantages__page {
+   background-color: #fff;
+   padding: 100px 0 140px 0;
+}
+.advantages__conteiner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 80px;
+   width: 89%;
+}
+.advantages__card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 0 1 15%;
+}
+.advantages__card-image {
+   width: 100px;
+}
+.advantages__card-img {
+   width: 100%;
+}
+.advantages__card-text-title {
+   text-align: center;
+   flex: 0 1 auto;
+}
+.advantages__card-text-subtitle {
+   text-align: center;
+}
+.advantages__card-title {
+   padding: 18px 0 15px 0;
+   color: rgb(0, 0, 0);
+   font-family: "FuturaDemiC";
+   @include adaptiveFont(22, 16);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.063;
+}
+.advantages__card-subtitle {
+   color: rgb(0, 0, 0);
+   font-family: "FuturaPt";
+   @include adaptiveFont(19, 13);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.111;
+}
+// @media screen and (max-width: 1120px) {
+
+// }
+@media screen and (max-width: 550px) {
+   .advantages__page {
+      padding: 50px 0 0 0;
+   }
+   .advantages__conteiner {
+      justify-content: center;
+   }
+}
+@media screen and (max-width: 300px) {
+   .advantages__conteiner {
+      gap: 20px;
+   }
+}

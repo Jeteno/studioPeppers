@@ -1,0 +1,43 @@
+@import "fonts.scss";
+
+.header__page {
+   padding: 28px 0;
+   width: 100%;
+   position: absolute;
+   pointer-events: auto;
+}
+.header__container {
+   justify-content: space-between;
+}
+.social-media__list {
+   display: flex;
+   gap: 13px;
+}
+.social-media__list-image {
+   width: 44px;
+   height: 44px;
+}
+.button__btn {
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(255, 255, 255);
+   border-radius: 6px;
+   background-color: rgba(41, 211, 209, 0);
+   padding: 8px 26px;
+   @include adaptiveFont(15, 9);
+   font-family: "FuturaDemiC";
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   line-height: 2;
+   cursor: pointer;
+   &:hover {
+      border-color: rgb(255, 255, 255, 0.5);
+      color: rgb(255, 255, 255, 0.5);
+   }
+}
+@media screen and (max-width: 425px) {
+   .header__page  {
+      display: none;
+   }
+}

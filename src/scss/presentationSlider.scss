@@ -1,0 +1,91 @@
+@import "fonts.scss";
+@import "common.scss";
+
+.presentation-slider__page {
+   background-color: rgb(41, 211, 209);
+}
+.presentation-slider__conteiner {
+   display: flex;
+   gap: 60px;
+   width: 100%;
+   padding: 65px 60px 110px 60px;
+   position: relative;
+}
+.presentation-slider__slide {
+   background-image: url("../img/phone2.png");
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 245px;
+   top: -68px;
+   z-index: 3;
+}
+.presentation-slider__slide-body {
+   position: absolute;
+   top: 68px;
+   left: 65px;
+   overflow: hidden;
+   width: 243px;
+   display: flex;
+}
+.presentation-slider__slide-body-img {
+   display: flex;
+   transition: all ease 1s;
+   position: relative;
+   left: 0;
+}
+.presentation-slider__body-list {
+   display: flex;
+   gap: 30px;
+}
+.presentation-slider__body-paragraph {
+   position: relative;
+   z-index: 1;
+   &:first-child {
+      padding-right: 345px;
+   }
+}
+.presentation-slider__body-paragraph-link {
+   @include adaptiveFont(32, 15);
+   font-family: "FuturaDemiC";
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.302);
+   line-height: 2;
+   &:hover{
+      color: rgba(255, 255, 255, 0.7);
+   }
+}
+.active-paragraph {
+   position: relative;
+   color: rgb(255, 255, 255);
+   &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+   }
+}
+.presentation-slider__body-description {
+   padding: 40px 0 0 560px;
+   width: 90%;
+}
+.presentation-slider__body-subtitle {
+   @include adaptiveFont(20, 14);
+   font-family: "Futura PT";
+   color: rgb(255, 255, 255);
+   line-height: 1.3;
+   text-align: left;
+   padding-bottom: 25px;
+}
+@media screen and (min-width: 2400px) {
+   .presentation-slider__body-description {
+      padding-left: 605px;
+   }
+}
+@media screen and (max-width: 1120px) {
+   .presentation-slider__page {
+      display:  none !important;
+   }
+}
